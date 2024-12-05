@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.star {
+  color: #cf1b22 !important;
+}
+
+.sign-in-form label {
+  margin: 0 0 5px 0px;
+  display: block;
+}
+
+/* Buttons */
+.button {
+  width: 140px;
+  border-color: #cf1b22;
+  background: #cf1b22;
+  cursor: pointer;
+  border: none;
+  line-height: 28px;
+  border-radius: 8px;
+  padding: 8px 30px;
+  color: #fff !important;
+}
+
+/* Page element style */
+.page-description {
+  margin: 0 0 40px;
+}
+
+/* Sign up form container */
+.Status-form {
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 30px 15px;
+  width: 100%;
+}
+
+.Status-form label{
+  margin:0 0 8px 0px;
+  display: block;
+}
+
+.sign-in-form__header {
+  text-align: center;
+}
+
+.field {
+  position: relative;
+  margin: 0 0 15px;
+}
+
+.field__label {
+  color: #9c9c9c;
+  left: 15px;
+  position: absolute;
+  top: 17px;
+  transition: color 0.15s ease-in-out, top 0.15s ease-in-out,
+    font-size 0.15s ease-in-out;
+}
+
+.field__input {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  color: #6a6a6a;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  padding: 15px 15px 15px;
+  width: 100%;
+  transition: border 0.15s ease-in-out;
+}
+
+.field__input:focus {
+  border-color: #828282;
+  color: #101010;
+}
+
+.field__label--raised,
+.field__input:focus + .field__label {
+  font-size: 11px;
+  top: 8px;
+}
+
+.field__input:focus + .field__label {
+  color: #828282;
+}
+
+.field__input.is-invalid {
+  border-color: #828282;
+}
+
+.field__input.is-invalid:focus {
+  border-color: #ff1d43;
+}
+
+.is-invalid + .field__label {
+  color: #ff1d43 !important;
+}
+
+.field__error {
+  color: #ff1d43;
+  text-align: end;
+  font-size: 13px;
+  margin: 4px 4px 0;
+  min-height: 17px;
+}
+
+.field__error label{
+  background-color: #fff;
+  color: red;
+  padding: 6px 20px;
+  width: fit-content;
+  float: right;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  margin: 7px 0 0 0px;
+}
+
+.field__error label:after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  background-color: white;
+  bottom: 56%;
+  border-top: #d3d3d3 solid 1px;
+  border-left: #d3d3d3 solid 1px;
+  transform: rotate(226deg);
+}
+
+@media (max-width: 322px){
+  .field__error label:after {
+    bottom: 64%;
+  }
+
+} 
+
