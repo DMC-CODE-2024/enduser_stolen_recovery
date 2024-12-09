@@ -1,7 +1,7 @@
 <Configuration status="DEBUG">
  <Properties>
-  <Property name="app-logs-dir">${env:DATA_HOME}/eirs/gui/logs/portal</Property>
-  <Property name="log-file-name">stolen</Property>
+  <Property name="app-logs-dir">${env:LOG_HOME}/gui_module/lost</Property>
+  <Property name="log-file-name">lost</Property>
 
  </Properties>
  <Appenders>
